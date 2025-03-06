@@ -1,0 +1,116 @@
+.home-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+.page-title{
+    color: #333;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+.table-container{
+    overflow-y: auto;
+    max-height: 70vh;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.expense-table{
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+.expense-table thead{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.expense-table th{
+    background-color: #3498db;
+    color: white;
+    font-weight: 600;
+    text-align: left;
+    padding: 1rem;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+.expense-table td{
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+}
+.expense-table tbody tr:hover{
+    background-color: #f5f9ff;
+    transition: background-color 0.2s ease;
+}
+.amount-cell{
+    font-weight: 500;
+    text-align: left;
+}
+.actions-cell{
+    display: flex;
+    gap: 0.5rem;
+}
+.edit-button, .delete-button{
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+}
+.edit-button{
+    background-color: #3498db;
+    color: white;
+}
+.edit-button:hover{
+    background-color: #2980b9;
+}
+.delete-button{
+    background-color: #e74c3c;
+    color: white;
+}
+.delete-button:hover{
+    background-color: #c0392b;
+}
+.total-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+.total-label{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+    margin-right: 1rem;
+}
+.total-amount{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #2ecc71;
+    background-color: #eafaf1;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+@media(max-width: 768px){
+    .home-container{
+        padding: 1rem;
+    }
+    .expense-table th, .expense-table td{
+        padding: 0.75rem;
+    }
+    .actions-cell{
+        flex-direction: column;
+    }
+    .edit-button, .delete-button{
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
+    }
+}
