@@ -1,0 +1,93 @@
+.form-container{
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-title{
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.75rem;
+}
+.expense-form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.form-label{
+    font-weight: 600;
+    color: #555;
+    font-size: 1rem;
+}
+.form-input, .form-select{
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}   
+.form-input:focus,
+.form-select:focus{
+    border-color: #3498db;
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+    outline: none;
+}
+.form-input::placeholder{
+    color: #aaa;
+}
+.form-select{
+    cursor: pointer;
+    background-color: white;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' widt='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23555' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%Cpath d='M6 9l6 6 6-6' /%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 16px;
+    padding-right: 2.5rem;
+}
+.submit-button{
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.875rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 0.5rem;
+}
+.submit-button:hover{
+    background-color: #2980b9;
+}
+.submit-button:active{
+    transform: translateY(1px);
+}
+.form-input.error,
+.form-select.error{
+    border-color: #e74c3c;
+}
+@media(max-width: 768px){
+    .form-container{
+        padding: 1.5rem;
+        margin: 1rem;
+    }
+    .form-title{
+        font-size: 1.5rem;
+    }
+    .submit-button{
+        padding: 0.75rem;
+    }
+}

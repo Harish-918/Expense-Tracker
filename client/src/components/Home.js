@@ -19,18 +19,10 @@ const Home = () => {
         fetchData();
     }, []);
 
-    /* const editExpense = (expense) => {
-        axios.put(`http://localhost:9418/editexpense/${expense.title}`, expense)
-            .then(response => {
-                fetchData();
-            })
-            .catch(err => console.error(err));
-    } */
-
     const deleteExpense = (expense) => {
         axios.delete(`http://localhost:9418/deleteexpense/${expense.title}`)
             .then(response => {
-                setExpenses(expenses.filter(e => e.id !== expense.id));
+                fetchData();
             })
             .catch(err => console.error(err));
     }
