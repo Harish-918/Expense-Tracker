@@ -1,70 +1,77 @@
-# Getting Started with Create React App
+# Expense Tracker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+An Expense Tracker built with React, Axios, and Chart.js. This app allows users to track their expenses by adding, editing, and deleting entries. It also provides a visual breakdown of expenses by category using pie charts.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Add Expense**: Users can add new expenses with title, amount, and category.
+- **Edit Expense**: Users can edit the details of an existing expense.
+- **Delete Expense**: Users can delete an expense.
+- **Expense Breakdown**: Visual representation of expenses in different categories using a pie chart.
+- **Total Expenses**: Displays the total of all expenses added.
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **React**: JavaScript library for building user interfaces.
+- **Axios**: HTTP client for making requests to a backend API.
+- **Chart.js**: Used for generating pie charts to display the breakdown of expenses by category.
+- **React Router**: To handle routing and navigation within the app.
+- **Material-UI**: Provides React components for the UI (e.g., Card, Typography).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+To get a local copy up and running, follow these steps:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
 
-### `npm run build`
+- Node.js
+- npm (Node Package Manager)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   git clone [https://github.com/your-username/expense-tracker.git](https://github.com/Harish-918/Expense-Tracker)
+   ```
 
-### `npm run eject`
+2. Navigate to the project directory:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```bash
+   cd expense-tracker
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Install the dependencies:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   ```bash
+   npm install
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+4. Run the app:
 
-## Learn More
+   ```bash
+   npm start
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+5. Open your browser and go to `http://localhost:3000` to view the app.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## API
 
-### Code Splitting
+This project assumes you have an API running locally to handle requests to add, get, edit, and delete expenses. You can create your own API or use the following endpoints for testing:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **POST /addexpense**: Adds a new expense. Requires `title`, `amount`, and `category`.
+- **GET /getexpense**: Fetches all expenses.
+- **PUT /editexpense/:title**: Updates an existing expense based on the title.
+- **DELETE /deleteexpense/:title**: Deletes an expense based on the title.
 
-### Analyzing the Bundle Size
+Make sure your backend server is running on `http://localhost:9418` or update the API URLs in the code if necessary.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- **AddExpense.js**: Form to add a new expense.
+- **Dashboard.js**: Displays the pie chart with expenses breakdown.
+- **EditExpense.js**: Form to edit an existing expense.
+- **Home.js**: Lists all expenses with options to edit and delete.
+- **Navbar.js**: Navigation bar for navigating between different pages.
 
-### Making a Progressive Web App
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+If you'd like to contribute to this project, feel free to fork the repository, make your changes, and create a pull request.
