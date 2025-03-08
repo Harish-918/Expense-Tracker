@@ -2,6 +2,9 @@
 
 The **Expense Tracker** is a full-stack application that allows users to track their expenses. It consists of a **frontend** built with **React** and a **backend** powered by **Express.js** and **MongoDB**. The app provides functionality to add, edit, delete, and display expenses. It also displays a visual breakdown of expenses by category using charts.
 
+## Problem Statement
+Managing personal finances can be a daunting task. Many individuals struggle to track their daily expenses, leading to difficulty in budgeting and understanding where their money is going. Without an organized system for tracking spending, it becomes challenging to manage finances effectively and make informed financial decisions. The Expense Tracker application aims to solve this problem by providing an easy-to-use, intuitive tool for tracking expenses. It allows users to add, modify, and delete expenses, as well as visualize their spending patterns through a pie chart, helping them stay on top of their financial goals.
+
 ## Features
 
 - **Add Expense**: Users can add new expenses with a title, amount, and category.
