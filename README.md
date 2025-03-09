@@ -138,38 +138,6 @@ Deletes an expense based on its title.
 
 Make sure the backend server is running and accessible at `http://localhost:9418`. The frontend (React app) will make requests to this URL to interact with the backend.
 
-## Folder Structure
-
-### Frontend (React)
-
-```
-/frontend
-  /src
-    /components
-      - AddExpense.js           # Form to add a new expense
-      - Dashboard.js            # Displays expense breakdown pie chart
-      - EditExpense.js          # Form to edit an existing expense
-      - Home.js                 # Lists all expenses with edit and delete options
-      - Navbar.js               # Navigation bar with links
-    - App.js                    # Main React component
-    - App.css                   # Styles for the app
-```
-
-### Backend (Express + MongoDB)
-
-```
-/backend
-  /config
-    - db.js                    # MongoDB connection setup
-  /model
-    - expense.js               # Mongoose model for expenses
-  /routes
-    - expenseRoutes.js         # API routes for expenses
-  - app.js                      # Express server setup
-  - server.js                   # Starts the server
-  - package.json                # Project dependencies and scripts
-```
-
 ## Running Tests
 
 Currently, this project does not include automated tests. You can manually test the app using tools like [Postman](https://www.postman.com/) or `curl` for API requests, and interact with the frontend through the web browser.
