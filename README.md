@@ -138,10 +138,6 @@ Deletes an expense based on its title.
 
 Make sure the backend server is running and accessible at `http://localhost:9418`. The frontend (React app) will make requests to this URL to interact with the backend.
 
-## Running Tests
-
-Currently, this project does not include automated tests. You can manually test the app using tools like [Postman](https://www.postman.com/) or `curl` for API requests, and interact with the frontend through the web browser.
-
 ## Contributing
 
 Feel free to fork this repository, make changes, and submit pull requests. When contributing, please adhere to the following guidelines:
